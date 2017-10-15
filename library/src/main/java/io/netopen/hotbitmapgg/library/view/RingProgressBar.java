@@ -171,7 +171,7 @@ public class RingProgressBar extends View {
     //获取文字的宽度 用于绘制文本内容
     float textWidth = paint.measureText(percent + "%");
     //绘制文本 会根据设置的是否显示文本的属性&是否是Stroke的样式进行判断
-    if (textIsShow && percent != 0 && style == STROKE) {
+    if (textIsShow && style == STROKE) {
       canvas.drawText(percent + "%", centre - textWidth / 2, centre + textSize / 2, paint);
     }
   }
